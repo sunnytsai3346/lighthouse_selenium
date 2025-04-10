@@ -19,7 +19,8 @@ for url in urls:
         "--form-factor=mobile",
         "--screenEmulation.width=360",
         "--screenEmulation.height=640",
-        f"--output-path={output_path}",
+        "--output=html",
+        f"--output-path={output_path.replace('.json', '')}",
         "--quiet"
     ], check=True)
 

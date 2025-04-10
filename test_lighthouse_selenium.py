@@ -9,7 +9,7 @@ chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
 
 driver = webdriver.Chrome(options=chrome_options)
-
+output_path = f".\lighthouse_report\lighthouse-report.json"
 try:
     # Step 2: Navigate to dummy web app
     print("Opening dummy app...")
@@ -27,7 +27,8 @@ try:
         target_url,
         "--port=9222",
         "--output=json",
-        "--output-path=./lighthouse-report.json",
+        "--output=html",
+        f"--output-path={output_path.replace('.json', '')}",
         #"--only-categories=performance"
         #"--quiet"
     ])
