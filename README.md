@@ -1,3 +1,24 @@
+#### lighthouse_selenium (Performance auditing using Selenium & Lighthouse) ####
+Description:
+Automated tool that runs Google Lighthouse audits on pages using Selenium for performance, accessibility, best practices with possible integration into CI pipelines.
+
+README Sections:
+
+⚙️ Overview — automated Lighthouse tests via Selenium browser automation.
+
+📚 Tech Stack — Selenium WebDriver, Node.js or Python, Lighthouse CLI.
+
+🔍 Functionality — run audits, save JSON/html reports, aggregate metrics.
+
+🔁 Getting Started — dependency install, setup, run test script/tab.
+
+📊 Sample Report — include excerpts of lighthouse scores.
+
+🧪 ** CI/CD Integration** — example pipeline script or GitHub Action template.
+
+📝 Future Enhancements — thresholds-based CI fail, chart dashboards, Slack notifications.
+---------
+
 ### selenium and lighthouse together ###
 - run test_lighthouse_selenium.py to generate lighthouse.json
 ### selenium and lighthouse are exectured seperately ###
